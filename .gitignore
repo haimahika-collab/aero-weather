@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.gradio/
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+.DS_Store

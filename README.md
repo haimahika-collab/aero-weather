@@ -1,3 +1,31 @@
+# Time-series model demos (LSTM, 1D-CNN, State-Space, Transformer)
+
+This folder contains compact PyTorch implementations of common time-series forecasting architectures and a tiny training script using a synthetic sine-wave dataset.
+
+Quick start
+
+Install dependencies (recommended in a venv):
+
+```bash
+pip install -r requirements.txt
+```
+
+Train a model (examples):
+
+```bash
+python train.py --model lstm
+python train.py --model cnn
+python train.py --model transformer
+python train.py --model ssm
+```
+
+Files of interest
+
+- `models.py`: LSTM, 1D-CNN, simple linear State-Space, Transformer encoder forecasters
+- `data.py`: synthetic sine-wave dataset generator and dataset wrapper
+- `train.py`: quick trainer that prints train/validation MSE
+
+These are minimal examples intended as a starting point for experimentation.
 # ✈️ AeroWeather — Airport Flight Delay Predictor & ML Simulator
 
 An interactive machine learning web app that simulates how weather and operational
@@ -139,3 +167,15 @@ AeroWeather/
 - [Kaggle](https://www.kaggle.com) — real flight/weather datasets and competitions
 - [Coursera: ML Specialization (Andrew Ng)](https://www.coursera.org/specializations/machine-learning-introduction)
 - [Fast.ai](https://www.fast.ai) — code-first deep learning course
+
+## Using Real Research Data
+
+You can train the PyTorch time-series models on real CSV datasets (for example, station time-series or research CSV exports). The trainer accepts a CSV path or URL and expects the data to be time-ordered.
+
+Example CLI (CSV contains columns `temp,humidity,wind` and `target`):
+
+```bash
+python train.py --data-path path/to/dataset.csv --feature-cols temp,humidity,wind --target-col target --model lstm --seq-len 50 --epochs 10
+```
+
+For large gridded research datasets (ERA5, MERRA), prefer exporting the single-station timeseries or using xarray to pre-process NetCDF files; the helper `data.load_csv_time_series` is intended for tabular CSV inputs.
