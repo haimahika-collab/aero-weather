@@ -8,7 +8,12 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import accuracy_score, r2_score
 import io
 from PIL import Image
-
+# make `train.py` callable from the UI
+import subprocess, sys
+import torch
+from torch.utils.data import DataLoader
+from data import load_csv_time_series, TimeSeriesDataset
+from models import LSTMForecaster, CNN1DForecaster
 # Global variables to store the generated data and models
 data_store = {"df": None, "clf": None, "nn": None, "features": None}
 
@@ -360,6 +365,95 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                     "*   **[Fast.ai](https://www.fast.ai):** A free 'code-first' course where you build working models immediately before learning the heavy math."
                 )
 
+# TAB 5: Run training from the UI
+    with gr.Tab("Step 5: Train Models (UI)"):
+        gr.Markdown("### Run a short training job from the UI (uses your venv Python).")
+        model_choice = gr.Dropdown(choices=["lstm", "cnn", "ssm", "transformer"], value="lstm", label="Model")
+        epochs_slider = gr.Slider(1, 20, value=3, step=1, label="Epochs")
+        run_btn = gr.Button("Run Training")
+        train_log = gr.Textbox(label="Training Log", lines=20)
+
+        def run_training_ui(model, epochs):
+            cmd = [sys.executable, "train.py", "--model", model, "--epochs", str(int(epochs))]
+            try:
+                proc = subprocess.run(cmd, capture_output=True, text=True, check=False)
+                out = proc.stdout or ""
+                if proc.stderr:
+                    out += "\n\nSTDERR:\n" + proc.stderr
+            except Exception as e:
+                out = f"Failed to run training: {e}"
+            return out
+
+        run_btn.click(run_training_ui, inputs=[model_choice, epochs_slider], outputs=[train_log])
+
+        gr.Markdown("---")
+        gr.Markdown("### Train Deep Time-Series Models (LSTM / 1D-CNN) on Real CSV Data")
+        csv_file = gr.File(label="Upload CSV (time-ordered)")
+        csv_url = gr.Textbox(label="Or provide CSV URL (optional)")
+        feat_cols = gr.Textbox(label="Feature columns (comma-separated)")
+        target_col = gr.Textbox(label="Target column (single)")
+        seq_len_slider = gr.Slider(10, 200, value=50, step=10, label="Sequence Length")
+        deep_model_choice = gr.Dropdown(choices=["lstm", "cnn"], value="lstm", label="Model")
+        deep_epochs = gr.Slider(1, 50, value=5, step=1, label="Epochs")
+        run_deep = gr.Button("Train Deep Model")
+        deep_log = gr.Textbox(label="Deep Training Log", lines=20)
+
+        def run_training_deep(uploaded_file, url, feature_cols_str, target_col_str, seq_len, model_name, epochs):
+            if uploaded_file is None and (url is None or url.strip() == ""):
+                return "Please upload a CSV file or provide a CSV URL."
+            path = None
+            if uploaded_file is not None:
+                path = uploaded_file.name
+            else:
+                path = url.strip()
+
+            if not feature_cols_str or not target_col_str:
+                return "Please provide comma-separated feature column names and a target column name."
+
+            feat_cols = [c.strip() for c in feature_cols_str.split(',') if c.strip()]
+            try:
+                X, y = load_csv_time_series(path, feature_cols=feat_cols, target_col=target_col_str, seq_len=int(seq_len))
+            except Exception as e:
+                return f"Failed to load CSV and prepare sequences: {e}"
+
+            if len(X) == 0:
+                return "No training sequences produced. Check sequence length and data size."
+
+            ds = TimeSeriesDataset(X, y)
+            loader = DataLoader(ds, batch_size=32, shuffle=True)
+            device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+            if model_name == 'lstm':
+                model = LSTMForecaster(input_size=X.shape[-1], hidden_size=64, num_layers=2).to(device)
+            else:
+                model = CNN1DForecaster(input_channels=X.shape[-1], channels=[16, 32], kernel_size=3, seq_len=X.shape[1]).to(device)
+
+            opt = torch.optim.Adam(model.parameters(), lr=1e-3)
+            loss_fn = torch.nn.MSELoss()
+
+            logs = []
+            for epoch in range(1, int(epochs) + 1):
+                model.train()
+                total = 0.0
+                n = 0
+                for xb, yb in loader:
+                    xb = xb.to(device)
+                    yb = yb.to(device)
+                    pred = model(xb).squeeze(-1)
+                    loss = loss_fn(pred, yb)
+                    opt.zero_grad()
+                    loss.backward()
+                    opt.step()
+                    total += loss.item() * xb.size(0)
+                    n += xb.size(0)
+                logs.append(f"Epoch {epoch:3d} — Train MSE: {total / n:.6f}")
+
+            return "\n".join(logs)
+
+        run_deep.click(run_training_deep, inputs=[csv_file, csv_url, feat_cols, target_col, seq_len_slider, deep_model_choice, deep_epochs], outputs=[deep_log])
+
+
 # Launch the interactive web server locally
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=True)
+
