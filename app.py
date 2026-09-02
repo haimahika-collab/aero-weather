@@ -453,7 +453,13 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
         run_deep.click(run_training_deep, inputs=[csv_file, csv_url, feat_cols, target_col, seq_len_slider, deep_model_choice, deep_epochs], outputs=[deep_log])
 
 
-# Launch the interactive web server locally
+# Launch the interactive web server for hosted environments like Railway
 if __name__ == "__main__":
-    demo.launch(share=True)
+    import os
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 7860)),
+        share=False,
+        debug=False,
+    )
 
