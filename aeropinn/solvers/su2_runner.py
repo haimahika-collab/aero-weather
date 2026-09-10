@@ -8,14 +8,25 @@ for this project's laminar training regime (Plan Section 6).
 
 Dev/offline-only: never imported by the deployed app.py (Plan Section 24).
 
-IMPORTANT — not yet trustworthy ground truth: an initial coarse-mesh smoke test
-(NACA0012, AoA=2 deg, Re=5e4, fineness=0.3) ran to SU2's own convergence criteria
-in ~29s but produced CL ~= 0, which is physically suspicious for a symmetric
-airfoil at nonzero AoA (thin-airfoil theory suggests CL ~ 0.2 in this regime).
-This has NOT been root-caused yet (candidates: mesh too coarse at this fineness,
-genuine low-Re separation, or a config/reference-value issue) and no case run
-through this module should be treated as valid data until the Plan Section 12
-step 5 mesh-independence check is actually performed and passes.
+RESOLVED — two real config bugs found and fixed during Week 1 smoke testing (see
+test_su2_runner.py::test_naca0012_lift_sign_and_symmetry, a permanent regression
+test for both):
+  1. The config used FREESTREAM_VELOCITY, which SU2's INC_* solver family silently
+     ignores (it's a compressible-solver keyword) — the actual freestream for
+     incompressible solvers must be set via INC_VELOCITY_INIT. Without it, AoA had
+     zero effect on the flow at all, giving CL ~= 0 for a symmetric airfoil at
+     nonzero AoA regardless of mesh resolution.
+  2. Once that was fixed, lift came out with the wrong sign — root cause: AoA is
+     applied by rotating the inflow (not the mesh/geometry), and positive AoA in
+     that convention means the apparent inflow has a NEGATIVE y-component in the
+     airfoil-fixed frame, not positive. Fixed in the template's vel_y formula.
+Verified at default mesh resolution: NACA0012 gives CL(+2deg)=+0.131, CL(-2deg)=
+-0.112, CL(0deg)~=0.00001 — correct sign, correct antisymmetry, correct zero.
+
+STILL OPEN: this is sign/direction correctness, not full physical-accuracy
+validation. The Plan Section 12 step 5 mesh-independence check (CL/CD stable
+across >=3 mesh densities) has NOT been run yet — no sweep-scale data from this
+module should be treated as final ground truth until that check passes.
 """
 from dataclasses import dataclass
 from pathlib import Path
