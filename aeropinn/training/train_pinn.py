@@ -152,6 +152,10 @@ def main():
     parser.add_argument("--lambda-bc", type=float, default=5.0)
     parser.add_argument("--lambda-data", type=float, default=10.0)
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--out-name", type=str, default="pinn_v1",
+                         help="Checkpoint/history filename stem, e.g. 'pinn_v1_b2_dataonly' for "
+                              "the Physics Ablation baseline (--lambda-pde 0) so it doesn't "
+                              "overwrite the production pinn_v1.pt.")
     args = parser.parse_args()
 
     torch.manual_seed(args.seed)
@@ -206,11 +210,12 @@ def main():
             history.append({"epoch": epoch, "loss": loss.item(), "l_pde": l_pde.item(),
                              "l_bc": l_bc.item(), "l_data": l_data.item(), "elapsed_s": elapsed})
 
-    ckpt_path = CHECKPOINT_DIR / "pinn_v1.pt"
+    ckpt_path = CHECKPOINT_DIR / f"{args.out_name}.pt"
     torch.save({"model_state": model.state_dict(), "args": vars(args), "history": history}, ckpt_path)
     print(f"Saved checkpoint: {ckpt_path}", flush=True)
 
-    with open(CHECKPOINT_DIR / "train_history.json", "w") as f:
+    history_name = "train_history.json" if args.out_name == "pinn_v1" else f"train_history_{args.out_name}.json"
+    with open(CHECKPOINT_DIR / history_name, "w") as f:
         json.dump(history, f, indent=2)
 
 

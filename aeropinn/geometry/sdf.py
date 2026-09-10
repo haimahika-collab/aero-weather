@@ -95,6 +95,21 @@ def _naca4_boundary_loop_torch(m: torch.Tensor, p: torch.Tensor, t: torch.Tensor
     return torch.cat([lower, upper_rev], dim=1)  # (N, 2*n_points - 1, 2)
 
 
+def naca4_boundary_loop_torch(m, p, t, n_points: int = 150) -> torch.Tensor:
+    """Public single-geometry wrapper around _naca4_boundary_loop_torch: differentiable
+    w.r.t. scalar (0-d or 1-element) m, p, t. Returns (2*n_points-1, 2), ordered lower
+    surface LE->TE then upper surface TE->LE (matches physics/forces.py's convention).
+    Used by aeropinn/optimization/{gradient_design,grid_search}.py, where the design
+    variables m/p/t need gradients to flow through the geometry itself, not just the
+    network's output.
+    """
+    m1 = torch.as_tensor(m).reshape(1).float()
+    p1 = torch.as_tensor(p).reshape(1).float()
+    t1 = torch.as_tensor(t).reshape(1).float()
+    loop = _naca4_boundary_loop_torch(m1, p1, t1, n_points=n_points)  # (1, M, 2)
+    return loop.squeeze(0)
+
+
 def _point_in_polygon_torch(points: torch.Tensor, polygon: torch.Tensor) -> torch.Tensor:
     """Batched crossing-number test: one polygon per point.
 

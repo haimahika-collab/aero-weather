@@ -1,8 +1,13 @@
 """Held-out geometry evaluation (Plan Section 13/16, fast-path scope: one pooled
 held-out set rather than the full plan's separate interpolation/extrapolation splits).
 
-Run as: python -m aeropinn.evaluation.held_out_eval
+Run as: python -m aeropinn.evaluation.held_out_eval [--checkpoint NAME] [--out-suffix SUFFIX]
+
+--checkpoint pinn_v1_b2_dataonly --out-suffix _b2   evaluates the Physics Ablation
+baseline into held_out_eval_b2.json / held_out_demo_cases_b2.npz, leaving the
+production pinn_v1.pt's eval artifacts untouched.
 """
+import argparse
 import json
 import time
 from pathlib import Path
@@ -15,9 +20,9 @@ from aeropinn.models.pinn import GeometryConditionedPINN
 from aeropinn.training.train_pinn import CHECKPOINT_DIR, PROCESSED_DIR, load_sweep_data, _device
 
 
-def evaluate():
+def evaluate(checkpoint_name: str = "pinn_v1", out_suffix: str = ""):
     device = _device()
-    ckpt = torch.load(CHECKPOINT_DIR / "pinn_v1.pt", map_location=device)
+    ckpt = torch.load(CHECKPOINT_DIR / f"{checkpoint_name}.pt", map_location=device)
     model = GeometryConditionedPINN().to(device)
     model.load_state_dict(ckpt["model_state"])
     model.eval()
@@ -99,7 +104,7 @@ def evaluate():
         "device": str(device),
         "per_case": results,
     }
-    out_path = CHECKPOINT_DIR / "held_out_eval.json"
+    out_path = CHECKPOINT_DIR / f"held_out_eval{out_suffix}.json"
     with open(out_path, "w") as f:
         json.dump(summary, f, indent=2)
 
@@ -109,7 +114,7 @@ def evaluate():
           f"(on {device}, batch of ~{results[0]['n_points']} points)", flush=True)
     print(f"Saved: {out_path}", flush=True)
 
-    demo_path = CHECKPOINT_DIR / "held_out_demo_cases.npz"
+    demo_path = CHECKPOINT_DIR / f"held_out_demo_cases{out_suffix}.npz"
     np.savez(demo_path, cases=np.array(demo_cases, dtype=object), allow_pickle=True)
     print(f"Saved demo assets ({len(demo_cases)} cases): {demo_path}", flush=True)
 
@@ -117,4 +122,8 @@ def evaluate():
 
 
 if __name__ == "__main__":
-    evaluate()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--checkpoint", type=str, default="pinn_v1")
+    parser.add_argument("--out-suffix", type=str, default="")
+    args = parser.parse_args()
+    evaluate(checkpoint_name=args.checkpoint, out_suffix=args.out_suffix)

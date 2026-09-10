@@ -5,13 +5,12 @@ setup step), so it never blocks the fast unit-test suite. When it does run, it
 exercises the real toolchain (mikfoil meshing -> our laminar config -> SU2_CFD),
 not a mock, per the plan's "verify against the real solver" requirement.
 """
-import shutil
-
 import pytest
 
-su2_available = shutil.which("SU2_CFD") is not None
+from aeropinn.solvers.su2_runner import ensure_su2_on_path, su2_is_available
 
-pytestmark = pytest.mark.skipif(not su2_available, reason="SU2_CFD not found on PATH")
+ensure_su2_on_path()
+pytestmark = pytest.mark.skipif(not su2_is_available(), reason="SU2_CFD not found on PATH or ~/SU2/bin")
 
 
 def test_laminar_naca0012_smoke_run(tmp_path):

@@ -3,7 +3,7 @@
   "mean_u_rel_l2": 0.12872570546136963,
   "mean_v_rel_l2": 0.4547009625368648,
   "mean_p_rel_l2": 0.4578039397795995,
-  "mean_inference_latency_ms": 2.189570003085666,
+  "mean_inference_latency_ms": 2.007967895931668,
   "device": "mps",
   "per_case": [
     {
@@ -14,7 +14,7 @@
       "v_rel_l2": 0.4146009683609009,
       "p_rel_l2": 0.45099902153015137,
       "n_points": 300,
-      "inference_latency_ms": 58.6400032043457
+      "inference_latency_ms": 54.160118103027344
     },
     {
       "geom_id": "held_out_000",
@@ -24,7 +24,7 @@
       "v_rel_l2": 0.42789673805236816,
       "p_rel_l2": 0.49095863103866577,
       "n_points": 300,
-      "inference_latency_ms": 0.7448196411132812
+      "inference_latency_ms": 0.48422813415527344
     },
     {
       "geom_id": "held_out_000",
@@ -34,7 +34,7 @@
       "v_rel_l2": 0.5761786699295044,
       "p_rel_l2": 0.8301497101783752,
       "n_points": 300,
-      "inference_latency_ms": 0.4322528839111328
+      "inference_latency_ms": 0.4296302795410156
     },
     {
       "geom_id": "held_out_000",
@@ -44,7 +44,7 @@
       "v_rel_l2": 0.3833554685115814,
       "p_rel_l2": 0.6419479846954346,
       "n_points": 300,
-      "inference_latency_ms": 0.4177093505859375
+      "inference_latency_ms": 0.4200935363769531
     },
     {
       "geom_id": "held_out_000",
@@ -54,7 +54,7 @@
       "v_rel_l2": 0.5169485211372375,
       "p_rel_l2": 0.5014933347702026,
       "n_points": 300,
-      "inference_latency_ms": 0.4019737243652344
+      "inference_latency_ms": 0.5049705505371094
     },
     {
       "geom_id": "held_out_000",
@@ -64,7 +64,7 @@
       "v_rel_l2": 0.5056752562522888,
       "p_rel_l2": 0.4885682761669159,
       "n_points": 300,
-      "inference_latency_ms": 0.39505958557128906
+      "inference_latency_ms": 0.44798851013183594
     },
     {
       "geom_id": "held_out_001",
@@ -74,7 +74,7 @@
       "v_rel_l2": 0.5108468532562256,
       "p_rel_l2": 0.3208639323711395,
       "n_points": 300,
-      "inference_latency_ms": 0.4138946533203125
+      "inference_latency_ms": 0.4248619079589844
     },
     {
       "geom_id": "held_out_001",
@@ -84,7 +84,7 @@
       "v_rel_l2": 0.4778546988964081,
       "p_rel_l2": 0.2971530258655548,
       "n_points": 300,
-      "inference_latency_ms": 0.47898292541503906
+      "inference_latency_ms": 0.49686431884765625
     },
     {
       "geom_id": "held_out_001",
@@ -94,7 +94,7 @@
       "v_rel_l2": 0.318400502204895,
       "p_rel_l2": 0.34287384152412415,
       "n_points": 300,
-      "inference_latency_ms": 0.6017684936523438
+      "inference_latency_ms": 0.45108795166015625
     },
     {
       "geom_id": "held_out_001",
@@ -104,7 +104,7 @@
       "v_rel_l2": 0.3002391755580902,
       "p_rel_l2": 0.3177126348018646,
       "n_points": 300,
-      "inference_latency_ms": 0.4208087921142578
+      "inference_latency_ms": 0.4887580871582031
     },
     {
       "geom_id": "held_out_001",
@@ -114,7 +114,7 @@
       "v_rel_l2": 0.49435192346572876,
       "p_rel_l2": 0.2753561735153198,
       "n_points": 300,
-      "inference_latency_ms": 0.5159378051757812
+      "inference_latency_ms": 0.47779083251953125
     },
     {
       "geom_id": "held_out_001",
@@ -124,7 +124,7 @@
       "v_rel_l2": 0.34934180974960327,
       "p_rel_l2": 0.3521585166454315,
       "n_points": 300,
-      "inference_latency_ms": 0.4508495330810547
+      "inference_latency_ms": 0.47707557678222656
     },
     {
       "geom_id": "held_out_002",
@@ -134,7 +134,7 @@
       "v_rel_l2": 0.42818599939346313,
       "p_rel_l2": 0.25400638580322266,
       "n_points": 300,
-      "inference_latency_ms": 0.46896934509277344
+      "inference_latency_ms": 0.5710124969482422
     },
     {
       "geom_id": "held_out_002",
@@ -144,7 +144,7 @@
       "v_rel_l2": 0.4932941496372223,
       "p_rel_l2": 0.34785032272338867,
       "n_points": 300,
-      "inference_latency_ms": 0.5137920379638672
+      "inference_latency_ms": 0.4780292510986328
     },
     {
       "geom_id": "held_out_002",
@@ -154,7 +154,7 @@
       "v_rel_l2": 0.3181271553039551,
       "p_rel_l2": 0.3480378985404968,
       "n_points": 300,
-      "inference_latency_ms": 0.45680999755859375
+      "inference_latency_ms": 0.5030632019042969
     },
     {
       "geom_id": "held_out_002",
@@ -164,7 +164,7 @@
       "v_rel_l2": 0.2765582799911499,
       "p_rel_l2": 0.29522818326950073,
       "n_points": 300,
-      "inference_latency_ms": 0.4589557647705078
+      "inference_latency_ms": 0.5476474761962891
     },
     {
       "geom_id": "held_out_002",
@@ -174,7 +174,7 @@
       "v_rel_l2": 0.34118470549583435,
       "p_rel_l2": 0.2661573886871338,
       "n_points": 300,
-      "inference_latency_ms": 0.6618499755859375
+      "inference_latency_ms": 0.5321502685546875
     },
     {
       "geom_id": "held_out_002",
@@ -184,7 +184,7 @@
       "v_rel_l2": 0.521372377872467,
       "p_rel_l2": 0.3593614101409912,
       "n_points": 300,
-      "inference_latency_ms": 0.5772113800048828
+      "inference_latency_ms": 0.5249977111816406
     },
     {
       "geom_id": "held_out_003",
@@ -194,7 +194,7 @@
       "v_rel_l2": 0.4175427258014679,
       "p_rel_l2": 0.3773208260536194,
       "n_points": 300,
-      "inference_latency_ms": 0.5078315734863281
+      "inference_latency_ms": 0.5218982696533203
     },
     {
       "geom_id": "held_out_003",
@@ -204,7 +204,7 @@
       "v_rel_l2": 0.39428508281707764,
       "p_rel_l2": 0.4134514033794403,
       "n_points": 300,
-      "inference_latency_ms": 0.49805641174316406
+      "inference_latency_ms": 0.5681514739990234
     },
     {
       "geom_id": "held_out_003",
@@ -214,7 +214,7 @@
       "v_rel_l2": 0.42768409848213196,
       "p_rel_l2": 0.4918696880340576,
       "n_points": 300,
-      "inference_latency_ms": 0.6411075592041016
+      "inference_latency_ms": 0.5180835723876953
     },
     {
       "geom_id": "held_out_003",
@@ -224,7 +224,7 @@
       "v_rel_l2": 0.382551908493042,
       "p_rel_l2": 0.525920033454895,
       "n_points": 300,
-      "inference_latency_ms": 0.5428791046142578
+      "inference_latency_ms": 0.5466938018798828
     },
     {
       "geom_id": "held_out_003",
@@ -234,7 +234,7 @@
       "v_rel_l2": 0.47473710775375366,
       "p_rel_l2": 0.377401202917099,
       "n_points": 300,
-      "inference_latency_ms": 0.6470680236816406
+      "inference_latency_ms": 0.5218982696533203
     },
     {
       "geom_id": "held_out_003",
@@ -244,7 +244,7 @@
       "v_rel_l2": 0.44885674118995667,
       "p_rel_l2": 0.39293038845062256,
       "n_points": 300,
-      "inference_latency_ms": 0.7839202880859375
+      "inference_latency_ms": 0.5218982696533203
     },
     {
       "geom_id": "held_out_004",
@@ -254,7 +254,7 @@
       "v_rel_l2": 0.7585450410842896,
       "p_rel_l2": 0.7743224501609802,
       "n_points": 300,
-      "inference_latency_ms": 0.5509853363037109
+      "inference_latency_ms": 0.5152225494384766
     },
     {
       "geom_id": "held_out_004",
@@ -264,7 +264,7 @@
       "v_rel_l2": 0.48166415095329285,
       "p_rel_l2": 0.5026569962501526,
       "n_points": 300,
-      "inference_latency_ms": 0.6008148193359375
+      "inference_latency_ms": 0.5087852478027344
     },
     {
       "geom_id": "held_out_004",
@@ -274,7 +274,7 @@
       "v_rel_l2": 0.5729830265045166,
       "p_rel_l2": 0.7879363298416138,
       "n_points": 300,
-      "inference_latency_ms": 0.6649494171142578
+      "inference_latency_ms": 0.5152225494384766
     },
     {
       "geom_id": "held_out_004",
@@ -284,7 +284,7 @@
       "v_rel_l2": 0.4342358410358429,
       "p_rel_l2": 0.7159192562103271,
       "n_points": 300,
-      "inference_latency_ms": 0.60272216796875
+      "inference_latency_ms": 0.5660057067871094
     },
     {
       "geom_id": "held_out_004",
@@ -294,7 +294,7 @@
       "v_rel_l2": 0.5858824253082275,
       "p_rel_l2": 0.5692427158355713,
       "n_points": 300,
-      "inference_latency_ms": 0.6587505340576172
+      "inference_latency_ms": 0.5879402160644531
     },
     {
       "geom_id": "held_out_004",
@@ -304,7 +304,7 @@
       "v_rel_l2": 0.5798203945159912,
       "p_rel_l2": 0.5527102947235107,
       "n_points": 300,
-      "inference_latency_ms": 0.8349418640136719
+      "inference_latency_ms": 0.5679130554199219
     },
     {
       "geom_id": "held_out_005",
@@ -314,7 +314,7 @@
       "v_rel_l2": 0.6237272024154663,
       "p_rel_l2": 0.5733696222305298,
       "n_points": 300,
-      "inference_latency_ms": 0.5941390991210938
+      "inference_latency_ms": 0.560760498046875
     },
     {
       "geom_id": "held_out_005",
@@ -324,7 +324,7 @@
       "v_rel_l2": 0.3728029131889343,
       "p_rel_l2": 0.4914103150367737,
       "n_points": 300,
-      "inference_latency_ms": 0.8959770202636719
+      "inference_latency_ms": 0.5571842193603516
     },
     {
       "geom_id": "held_out_005",
@@ -334,7 +334,7 @@
       "v_rel_l2": 0.345880389213562,
       "p_rel_l2": 0.4636733829975128,
       "n_points": 300,
-      "inference_latency_ms": 0.6568431854248047
+      "inference_latency_ms": 0.5698204040527344
     },
     {
       "geom_id": "held_out_005",
@@ -344,7 +344,7 @@
       "v_rel_l2": 0.33548131585121155,
       "p_rel_l2": 0.42651432752609253,
       "n_points": 300,
-      "inference_latency_ms": 0.6389617919921875
+      "inference_latency_ms": 0.5850791931152344
     },
     {
       "geom_id": "held_out_005",
@@ -354,7 +354,7 @@
       "v_rel_l2": 0.5472476482391357,
       "p_rel_l2": 0.33780303597450256,
       "n_points": 300,
-      "inference_latency_ms": 0.8120536804199219
+      "inference_latency_ms": 0.5719661712646484
     },
     {
       "geom_id": "held_out_005",
@@ -364,7 +364,7 @@
       "v_rel_l2": 0.5308933854103088,
       "p_rel_l2": 0.5256128907203674,
       "n_points": 300,
-      "inference_latency_ms": 0.640869140625
+      "inference_latency_ms": 0.5619525909423828
     }
   ]
 }
