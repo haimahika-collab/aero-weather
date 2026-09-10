@@ -1,0 +1,377 @@
+{
+  "n_cases": 36,
+  "mean_u_rel_l2": 0.12872570546136963,
+  "mean_v_rel_l2": 0.4547009625368648,
+  "mean_p_rel_l2": 0.4578039397795995,
+  "mean_inference_latency_ms": 2.007967895931668,
+  "device": "mps",
+  "per_case": [
+    {
+      "geom_id": "held_out_000",
+      "alpha_deg": 2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.13239939510822296,
+      "v_rel_l2": 0.4146009683609009,
+      "p_rel_l2": 0.45099902153015137,
+      "n_points": 300,
+      "inference_latency_ms": 54.160118103027344
+    },
+    {
+      "geom_id": "held_out_000",
+      "alpha_deg": 2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.14863687753677368,
+      "v_rel_l2": 0.42789673805236816,
+      "p_rel_l2": 0.49095863103866577,
+      "n_points": 300,
+      "inference_latency_ms": 0.48422813415527344
+    },
+    {
+      "geom_id": "held_out_000",
+      "alpha_deg": 6.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.14087533950805664,
+      "v_rel_l2": 0.5761786699295044,
+      "p_rel_l2": 0.8301497101783752,
+      "n_points": 300,
+      "inference_latency_ms": 0.4296302795410156
+    },
+    {
+      "geom_id": "held_out_000",
+      "alpha_deg": 6.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.12782859802246094,
+      "v_rel_l2": 0.3833554685115814,
+      "p_rel_l2": 0.6419479846954346,
+      "n_points": 300,
+      "inference_latency_ms": 0.4200935363769531
+    },
+    {
+      "geom_id": "held_out_000",
+      "alpha_deg": -2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.11151259392499924,
+      "v_rel_l2": 0.5169485211372375,
+      "p_rel_l2": 0.5014933347702026,
+      "n_points": 300,
+      "inference_latency_ms": 0.5049705505371094
+    },
+    {
+      "geom_id": "held_out_000",
+      "alpha_deg": -2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.10478964447975159,
+      "v_rel_l2": 0.5056752562522888,
+      "p_rel_l2": 0.4885682761669159,
+      "n_points": 300,
+      "inference_latency_ms": 0.44798851013183594
+    },
+    {
+      "geom_id": "held_out_001",
+      "alpha_deg": 2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.1436399221420288,
+      "v_rel_l2": 0.5108468532562256,
+      "p_rel_l2": 0.3208639323711395,
+      "n_points": 300,
+      "inference_latency_ms": 0.4248619079589844
+    },
+    {
+      "geom_id": "held_out_001",
+      "alpha_deg": 2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.16570913791656494,
+      "v_rel_l2": 0.4778546988964081,
+      "p_rel_l2": 0.2971530258655548,
+      "n_points": 300,
+      "inference_latency_ms": 0.49686431884765625
+    },
+    {
+      "geom_id": "held_out_001",
+      "alpha_deg": 6.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.11155819147825241,
+      "v_rel_l2": 0.318400502204895,
+      "p_rel_l2": 0.34287384152412415,
+      "n_points": 300,
+      "inference_latency_ms": 0.45108795166015625
+    },
+    {
+      "geom_id": "held_out_001",
+      "alpha_deg": 6.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.12877459824085236,
+      "v_rel_l2": 0.3002391755580902,
+      "p_rel_l2": 0.3177126348018646,
+      "n_points": 300,
+      "inference_latency_ms": 0.4887580871582031
+    },
+    {
+      "geom_id": "held_out_001",
+      "alpha_deg": -2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.12568071484565735,
+      "v_rel_l2": 0.49435192346572876,
+      "p_rel_l2": 0.2753561735153198,
+      "n_points": 300,
+      "inference_latency_ms": 0.47779083251953125
+    },
+    {
+      "geom_id": "held_out_001",
+      "alpha_deg": -2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.12627555429935455,
+      "v_rel_l2": 0.34934180974960327,
+      "p_rel_l2": 0.3521585166454315,
+      "n_points": 300,
+      "inference_latency_ms": 0.47707557678222656
+    },
+    {
+      "geom_id": "held_out_002",
+      "alpha_deg": 2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.11141204088926315,
+      "v_rel_l2": 0.42818599939346313,
+      "p_rel_l2": 0.25400638580322266,
+      "n_points": 300,
+      "inference_latency_ms": 0.5710124969482422
+    },
+    {
+      "geom_id": "held_out_002",
+      "alpha_deg": 2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.13628041744232178,
+      "v_rel_l2": 0.4932941496372223,
+      "p_rel_l2": 0.34785032272338867,
+      "n_points": 300,
+      "inference_latency_ms": 0.4780292510986328
+    },
+    {
+      "geom_id": "held_out_002",
+      "alpha_deg": 6.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.0806393176317215,
+      "v_rel_l2": 0.3181271553039551,
+      "p_rel_l2": 0.3480378985404968,
+      "n_points": 300,
+      "inference_latency_ms": 0.5030632019042969
+    },
+    {
+      "geom_id": "held_out_002",
+      "alpha_deg": 6.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.07988978922367096,
+      "v_rel_l2": 0.2765582799911499,
+      "p_rel_l2": 0.29522818326950073,
+      "n_points": 300,
+      "inference_latency_ms": 0.5476474761962891
+    },
+    {
+      "geom_id": "held_out_002",
+      "alpha_deg": -2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.08337488770484924,
+      "v_rel_l2": 0.34118470549583435,
+      "p_rel_l2": 0.2661573886871338,
+      "n_points": 300,
+      "inference_latency_ms": 0.5321502685546875
+    },
+    {
+      "geom_id": "held_out_002",
+      "alpha_deg": -2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.11255709826946259,
+      "v_rel_l2": 0.521372377872467,
+      "p_rel_l2": 0.3593614101409912,
+      "n_points": 300,
+      "inference_latency_ms": 0.5249977111816406
+    },
+    {
+      "geom_id": "held_out_003",
+      "alpha_deg": 2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.10730813443660736,
+      "v_rel_l2": 0.4175427258014679,
+      "p_rel_l2": 0.3773208260536194,
+      "n_points": 300,
+      "inference_latency_ms": 0.5218982696533203
+    },
+    {
+      "geom_id": "held_out_003",
+      "alpha_deg": 2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.12728573381900787,
+      "v_rel_l2": 0.39428508281707764,
+      "p_rel_l2": 0.4134514033794403,
+      "n_points": 300,
+      "inference_latency_ms": 0.5681514739990234
+    },
+    {
+      "geom_id": "held_out_003",
+      "alpha_deg": 6.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.10119478404521942,
+      "v_rel_l2": 0.42768409848213196,
+      "p_rel_l2": 0.4918696880340576,
+      "n_points": 300,
+      "inference_latency_ms": 0.5180835723876953
+    },
+    {
+      "geom_id": "held_out_003",
+      "alpha_deg": 6.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.1324121356010437,
+      "v_rel_l2": 0.382551908493042,
+      "p_rel_l2": 0.525920033454895,
+      "n_points": 300,
+      "inference_latency_ms": 0.5466938018798828
+    },
+    {
+      "geom_id": "held_out_003",
+      "alpha_deg": -2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.10956481099128723,
+      "v_rel_l2": 0.47473710775375366,
+      "p_rel_l2": 0.377401202917099,
+      "n_points": 300,
+      "inference_latency_ms": 0.5218982696533203
+    },
+    {
+      "geom_id": "held_out_003",
+      "alpha_deg": -2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.09872595220804214,
+      "v_rel_l2": 0.44885674118995667,
+      "p_rel_l2": 0.39293038845062256,
+      "n_points": 300,
+      "inference_latency_ms": 0.5218982696533203
+    },
+    {
+      "geom_id": "held_out_004",
+      "alpha_deg": 2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.22856803238391876,
+      "v_rel_l2": 0.7585450410842896,
+      "p_rel_l2": 0.7743224501609802,
+      "n_points": 300,
+      "inference_latency_ms": 0.5152225494384766
+    },
+    {
+      "geom_id": "held_out_004",
+      "alpha_deg": 2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.16427652537822723,
+      "v_rel_l2": 0.48166415095329285,
+      "p_rel_l2": 0.5026569962501526,
+      "n_points": 300,
+      "inference_latency_ms": 0.5087852478027344
+    },
+    {
+      "geom_id": "held_out_004",
+      "alpha_deg": 6.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.2626824378967285,
+      "v_rel_l2": 0.5729830265045166,
+      "p_rel_l2": 0.7879363298416138,
+      "n_points": 300,
+      "inference_latency_ms": 0.5152225494384766
+    },
+    {
+      "geom_id": "held_out_004",
+      "alpha_deg": 6.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.193868950009346,
+      "v_rel_l2": 0.4342358410358429,
+      "p_rel_l2": 0.7159192562103271,
+      "n_points": 300,
+      "inference_latency_ms": 0.5660057067871094
+    },
+    {
+      "geom_id": "held_out_004",
+      "alpha_deg": -2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.10250642150640488,
+      "v_rel_l2": 0.5858824253082275,
+      "p_rel_l2": 0.5692427158355713,
+      "n_points": 300,
+      "inference_latency_ms": 0.5879402160644531
+    },
+    {
+      "geom_id": "held_out_004",
+      "alpha_deg": -2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.1009787917137146,
+      "v_rel_l2": 0.5798203945159912,
+      "p_rel_l2": 0.5527102947235107,
+      "n_points": 300,
+      "inference_latency_ms": 0.5679130554199219
+    },
+    {
+      "geom_id": "held_out_005",
+      "alpha_deg": 2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.1786240041255951,
+      "v_rel_l2": 0.6237272024154663,
+      "p_rel_l2": 0.5733696222305298,
+      "n_points": 300,
+      "inference_latency_ms": 0.560760498046875
+    },
+    {
+      "geom_id": "held_out_005",
+      "alpha_deg": 2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.12712597846984863,
+      "v_rel_l2": 0.3728029131889343,
+      "p_rel_l2": 0.4914103150367737,
+      "n_points": 300,
+      "inference_latency_ms": 0.5571842193603516
+    },
+    {
+      "geom_id": "held_out_005",
+      "alpha_deg": 6.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.10561683773994446,
+      "v_rel_l2": 0.345880389213562,
+      "p_rel_l2": 0.4636733829975128,
+      "n_points": 300,
+      "inference_latency_ms": 0.5698204040527344
+    },
+    {
+      "geom_id": "held_out_005",
+      "alpha_deg": 6.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.12159654498100281,
+      "v_rel_l2": 0.33548131585121155,
+      "p_rel_l2": 0.42651432752609253,
+      "n_points": 300,
+      "inference_latency_ms": 0.5850791931152344
+    },
+    {
+      "geom_id": "held_out_005",
+      "alpha_deg": -2.0,
+      "reynolds": 30000.0,
+      "u_rel_l2": 0.07780465483665466,
+      "v_rel_l2": 0.5472476482391357,
+      "p_rel_l2": 0.33780303597450256,
+      "n_points": 300,
+      "inference_latency_ms": 0.5719661712646484
+    },
+    {
+      "geom_id": "held_out_005",
+      "alpha_deg": -2.0,
+      "reynolds": 70000.0,
+      "u_rel_l2": 0.12215054780244827,
+      "v_rel_l2": 0.5308933854103088,
+      "p_rel_l2": 0.5256128907203674,
+      "n_points": 300,
+      "inference_latency_ms": 0.5619525909423828
+    }
+  ],
+  "latency_breakdown": {
+    "cold_mean_ms": 9.458978970845541,
+    "cold_n": 6,
+    "warm_mean_ms": 0.5177656809488932,
+    "warm_median_ms": 0.5199909210205078,
+    "warm_n": 30
+  }
+}

@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+/* Palette mirrors aeropinn/app/theme.py::AERO_PALETTE verbatim (and web/data/palette.json,
+   generated from the same source by aeropinn/export_site_data.py) — do not hand-edit
+   these hex values without re-running the export script and checking they still match. */
+:root {
+  --bg: #0B0F14;
+  --panel: #111820;
+  --panel-alt: #151D26;
+  --border: #26313D;
+  --text: #F2F5F7;
+  --text-muted: #8F9BA8;
+  --text-caption: #6E7A87;
+  --accent: #4EA1D3;
+  --warn: #D9A441;
+  --error: #D3564E;
+  --prediction: #4EA1D3;
+  --reference: #C7CDD3;
+  --train-geom: #5A6A78;
+  --held-out-geom: #4EA1D3;
+  --current-design: #F2F5F7;
+  --optimized-design: #D9A441;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --radius: 6px;
+  --border-width: 1px;
+
+  --font-serif: "Times New Roman", Times, Georgia, serif;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-panel-alt: var(--panel-alt);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-caption: var(--text-caption);
+  --color-accent: var(--accent);
+  --color-warn: var(--warn);
+  --color-error: var(--error);
+  --color-prediction: var(--prediction);
+  --color-reference: var(--reference);
+  --color-train-geom: var(--train-geom);
+  --color-held-out-geom: var(--held-out-geom);
+  --color-current-design: var(--current-design);
+  --color-optimized-design: var(--optimized-design);
+  --font-mono-eng: var(--font-jetbrains-mono);
+  --font-serif-editorial: var(--font-serif);
+}
+
+html {
+  background: var(--bg);
+  color-scheme: dark;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-serif);
+  margin: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Every numeric value site-wide stays monospace regardless of surrounding editorial
+   prose (Plan Section 3: "a mono number must never render in serif"). */
+[data-numeric], .mono {
+  font-family: var(--font-jetbrains-mono), ui-monospace, "SF Mono", Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Editorial vs. engineering typography mode, set per-section via data-typography. */
+[data-typography="editorial"] {
+  font-family: var(--font-serif);
+}
+[data-typography="engineering"] {
+  font-family: var(--font-jetbrains-mono), ui-monospace, "SF Mono", Consolas, monospace;
+}
+[data-typography="engineering"] h1,
+[data-typography="engineering"] h2,
+[data-typography="engineering"] h3 {
+  font-family: var(--font-serif);
+}
+
+.status-chip {
+  border: var(--border-width) solid var(--border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 0.78em;
+  display: inline-block;
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  letter-spacing: 0.02em;
+}
+.status-chip-ok { color: var(--accent); border-color: var(--accent); }
+.status-chip-warn { color: var(--warn); border-color: var(--warn); }
+.status-chip-error { color: var(--error); border-color: var(--error); }
+.status-chip-muted { color: var(--text-muted); }
+
+/* Allowed motion only: subtle transitions, nothing that constantly moves. */
+a, button, .status-chip, .panel-hover {
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

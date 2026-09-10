@@ -1,0 +1,17 @@
+{
+  "bg": "#0B0F14",
+  "panel": "#111820",
+  "panel_alt": "#151D26",
+  "border": "#26313D",
+  "text": "#F2F5F7",
+  "text_muted": "#8F9BA8",
+  "accent": "#4EA1D3",
+  "warn": "#D9A441",
+  "error": "#D3564E",
+  "prediction": "#4EA1D3",
+  "reference": "#C7CDD3",
+  "train_geom": "#5A6A78",
+  "held_out_geom": "#4EA1D3",
+  "current_design": "#F2F5F7",
+  "optimized_design": "#D9A441"
+}
