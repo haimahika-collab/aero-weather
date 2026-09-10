@@ -1,0 +1,48 @@
+# Baseline experiment config: laminar-regime NACA 4-digit family (Plan Section 6).
+# One config file = one reproducible run (Plan Section 24). Values here are the
+# scope-controlled envelope the whole project is validated within — do not widen
+# without updating the corresponding claims in the plan's Section 6/29.
+
+seed: 0
+
+geometry:
+  family: naca4digit
+  m_range: [0.0, 0.06]      # max camber
+  p_range: [0.10, 0.60]     # location of max camber
+  t_range: [0.08, 0.20]     # max thickness
+  n_train_geometries: 200
+  n_interp_test_geometries: 30
+  n_extrap_test_geometries: 30
+  sampling: latin_hypercube
+
+conditions:
+  alpha_deg_range: [-4.0, 8.0]   # pre-stall
+  reynolds_range: [1.0e4, 1.0e5] # laminar regime
+  mach_max: 0.3                   # incompressible-validity bound
+
+domain:
+  far_field_radius_chords: 17.5   # ~15-20c per Section 8
+  pressure_reference: far_field   # p_inf = 0
+
+network:
+  hidden_layers: 8
+  hidden_width: 128
+  activation: tanh
+  fourier_features_on: [x, y]
+  input_order: [x, y, sdf, m, p, t, alpha, Re]
+  output_order: [u, v, p]
+
+loss:
+  lambda_pde_init: 1.0
+  lambda_bc_init: 1.0
+  lambda_data_init: 1.0
+  lambda_aux_init: 0.0
+  adaptive_weighting: sa_pinn_ntk
+  reweight_every_n_epochs: 200
+
+training:
+  optimizer_phase1: adam
+  lr_phase1: 1.0e-3
+  optimizer_phase2: lbfgs
+  n_seeds: 3
+  collocation_points_per_geometry: 8000

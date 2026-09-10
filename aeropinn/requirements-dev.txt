@@ -1,0 +1,10 @@
+# Dev/offline-only dependencies for AeroPINN CFD generation, training, and testing.
+# NOT installed in the Railway deploy — the deployed app.py only needs the root
+# requirements.txt (torch + scipy) to run inference on a pretrained checkpoint.
+# See Plan Section 24: SU2/OpenFOAM/DeepXDE are development-time tools only.
+pytest>=8.0.0
+pyyaml>=6.0
+jinja2>=3.1.0
+deepxde>=1.11.0
+airfrans>=0.1.4
+cma>=3.3.0

@@ -179,3 +179,32 @@ python train.py --data-path path/to/dataset.csv --feature-cols temp,humidity,win
 ```
 
 For large gridded research datasets (ERA5, MERRA), prefer exporting the single-station timeseries or using xarray to pre-process NetCDF files; the helper `data.load_csv_time_series` is intended for tabular CSV inputs.
+
+---
+
+## AeroPINN — Geometry-Conditioned Physics-Informed Airfoil Surrogate
+
+A research-grade addition living in `aeropinn/`: a physics-informed neural network (PINN)
+that predicts 2D incompressible flow (velocity, pressure, Cp) around NACA 4-digit airfoils
+from geometry parameters (camber, camber location, thickness) and operating conditions
+(angle of attack, Reynolds number), generalizing to airfoil shapes never seen during
+training — without retraining. It's benchmarked against a neural-operator baseline
+(DeepONet) and a purely data-driven surrogate, evaluated on a held-out-geometry
+interpolation/extrapolation split, and extended to gradient-based inverse airfoil design
+with every proposed design independently re-validated against CFD/XFOIL (never
+self-validated by the surrogate).
+
+The full engineering plan — governing equations, network architecture, loss formulation,
+baselines, ablations, and an honest literature audit (the core idea already exists at
+workshop scale; the actual contribution here is the benchmark + validated inverse design)
+— lives in `aeropinn/PLAN.md`.
+
+CFD generation and model training are dev/offline-only (never part of the deployed app);
+the deployed Gradio app only loads a small pretrained checkpoint for fast CPU inference,
+shown as an **AeroPINN** tab alongside the flight-delay demo above.
+
+```bash
+cd aeropinn
+pip install -r requirements-dev.txt   # dev-only: pytest, deepxde, jinja2, pyyaml, airfrans, cma
+pytest tests/ -v                       # geometry, SDF, and Navier-Stokes residual unit tests
+```
