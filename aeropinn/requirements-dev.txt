@@ -9,3 +9,4 @@ deepxde>=1.11.0
 airfrans>=0.1.4
 cma>=3.3.0
 mikfoil>=0.1.0   # NACA-to-SU2 C-grid mesh generation (aeropinn/solvers/su2_runner.py)
+pyvista>=0.44.0  # parsing SU2 volume.vtu output (aeropinn/data/generate_sweep.py)

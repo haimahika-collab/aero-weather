@@ -14,6 +14,7 @@ import torch
 from torch.utils.data import DataLoader
 from data import load_csv_time_series, TimeSeriesDataset
 from models import LSTMForecaster, CNN1DForecaster
+from aeropinn.app.build_tab import build_tab as build_aeropinn_tab
 # Global variables to store the generated data and models
 data_store = {"df": None, "clf": None, "nn": None, "features": None}
 
@@ -451,6 +452,8 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             return "\n".join(logs)
 
         run_deep.click(run_training_deep, inputs=[csv_file, csv_url, feat_cols, target_col, seq_len_slider, deep_model_choice, deep_epochs], outputs=[deep_log])
+
+    build_aeropinn_tab()
 
 
 # Launch the interactive web server for hosted environments like Railway

@@ -13,6 +13,7 @@ __pycache__/
 # AeroPINN: raw CFD data (meshes, solver working dirs) and local experiment logs are
 # dev-only and stay off the repo; only processed data/checkpoints (Section 24) are committed.
 aeropinn/data/raw/
+aeropinn/data/processed/*/*.npz
 aeropinn/experiments/*/
 !aeropinn/experiments/checkpoints/
 su2_runs/
