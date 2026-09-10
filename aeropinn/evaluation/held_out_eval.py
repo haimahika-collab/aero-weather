@@ -80,7 +80,8 @@ def evaluate():
         demo_cases.append({
             "geom_id": str(e["geom_id"]), "m": float(e["m"]), "p": float(e["p"]), "t": float(e["t"]),
             "alpha_deg": float(e["alpha_deg"]), "reynolds": float(e["reynolds"]),
-            "surf_x": e["surf_xy"][:, 0], "surf_cp_true": e["surf_cp"], "surf_cp_pred": cp_pred,
+            "surf_x": e["surf_xy"][:, 0], "surf_y": e["surf_xy"][:, 1],
+            "surf_cp_true": e["surf_cp"], "surf_cp_pred": cp_pred,
             "cl_true": float(e["cl"]), "cd_true": float(e["cd"]),
             "u_rel_l2": results[-1]["u_rel_l2"], "v_rel_l2": results[-1]["v_rel_l2"], "p_rel_l2": results[-1]["p_rel_l2"],
         })

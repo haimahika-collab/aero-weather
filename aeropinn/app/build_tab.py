@@ -138,6 +138,8 @@ def _predict_field(m, p, t, alpha, reynolds):
 
 
 def _validate_held_out(case_label):
+    from aeropinn.geometry.naca import naca_camber
+
     state = _load()
     if "demo_cases" not in state:
         return None, "No held-out validation cases available yet."
@@ -146,10 +148,21 @@ def _validate_held_out(case_label):
     idx = labels.index(case_label)
     c = cases[idx]
 
-    order = np.argsort(c["surf_x"])
+    # A NACA airfoil has two surface points (upper, lower) at most x stations; sorting
+    # purely by x interleaves them into a jagged zigzag. Split by the camber line first.
+    yc = naca_camber(np.clip(c["surf_x"], 0, 1), c["m"], c["p"])
+    is_upper = c["surf_y"] >= yc
+
     fig, ax = plt.subplots(figsize=(6, 4.5))
-    ax.plot(c["surf_x"][order], c["surf_cp_true"][order], "k-", lw=2, label="SU2 (hidden reference)")
-    ax.plot(c["surf_x"][order], c["surf_cp_pred"][order], "r--", lw=2, label="AeroPINN prediction")
+    for mask, style_true, style_pred, name in [
+        (is_upper, "k-", "r--", "upper"), (~is_upper, "k-", "r--", "lower"),
+    ]:
+        order = np.argsort(c["surf_x"][mask])
+        x_s = c["surf_x"][mask][order]
+        ax.plot(x_s, c["surf_cp_true"][mask][order], style_true, lw=2,
+                 label="SU2 (hidden reference)" if name == "upper" else None)
+        ax.plot(x_s, c["surf_cp_pred"][mask][order], style_pred, lw=2,
+                 label="AeroPINN prediction" if name == "upper" else None)
     ax.invert_yaxis()
     ax.set_xlabel("x / chord"); ax.set_ylabel("Cp"); ax.legend()
     ax.set_title(f"Held-out geometry: m={c['m']:.3f} p={c['p']:.2f} t={c['t']:.3f}, "

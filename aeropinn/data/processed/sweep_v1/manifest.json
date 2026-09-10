@@ -1,0 +1,926 @@
+[
+  {
+    "status": "ok",
+    "geom_id": "train_000",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_000_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_000",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_000_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_000",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_000_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_000",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_000_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_000",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_000_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_000",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_000_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_001",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_001_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_001",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_001_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_001",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_001_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_001",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_001_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_001",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_001_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_001",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_001_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_002",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_002_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_002",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_002_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_002",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_002_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_002",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_002_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_003",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_003_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_002",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_002_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_002",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_002_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_003",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_003_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_003",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_003_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_003",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_003_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_003",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_003_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_003",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_003_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_004",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_004_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_004",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_004_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_004",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_004_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_004",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_004_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_004",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_004_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_005",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_005_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_004",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_004_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_005",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_005_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_005",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_005_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_005",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_005_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_005",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_005_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_005",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_005_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_006",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_006_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_006",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_006_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_006",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_006_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_006",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_006_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_006",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_006_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_006",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_006_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_007",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_007_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_007",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_007_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_007",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_007_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_007",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_007_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_007",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_007_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_007",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_007_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_008",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_008_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_008",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_008_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_008",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_008_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_008",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_008_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_009",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_009_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_008",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_008_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_008",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_008_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_009",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_009_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_009",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_009_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_009",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_009_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_009",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_009_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_009",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_009_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_010",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_010_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_010",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_010_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_010",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_010_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_010",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_010_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_010",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_010_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_010",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_010_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_011",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_011_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_011",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_011_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_011",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_011_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_011",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_011_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_011",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_011_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_011",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_011_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_012",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_012_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_012",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_012_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_012",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_012_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_012",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_012_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_012",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_012_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_012",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_012_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_013",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_013_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_013",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_013_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_013",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_013_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_013",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_013_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_013",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_013_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_013",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_013_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_014",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_014_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_014",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_014_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_014",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_014_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_014",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_014_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_014",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_014_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_014",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_014_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_015",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_015_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_015",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_015_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_015",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_015_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_015",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_015_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_015",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_015_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "train_015",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/train_015_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_000",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_000_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_000",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_000_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_000",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_000_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_000",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_000_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_000",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_000_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_000",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_000_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_001",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_001_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_001",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_001_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_001",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_001_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_001",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_001_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_001",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_001_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_001",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_001_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_002",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_002_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_002",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_002_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_002",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_002_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_002",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_002_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_002",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_002_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_003",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_003_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_003",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_003_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_002",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_002_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_003",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_003_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_003",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_003_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_003",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_003_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_003",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_003_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_004",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_004_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_004",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_004_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_004",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_004_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_004",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_004_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_004",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_004_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_004",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_004_aoa+6.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_005",
+    "alpha": -2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_005_aoa-2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_005",
+    "alpha": -2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_005_aoa-2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_005",
+    "alpha": 2.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_005_aoa+2.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_005",
+    "alpha": 6.0,
+    "reynolds": 30000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_005_aoa+6.0_re3e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_005",
+    "alpha": 2.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_005_aoa+2.0_re7e+04.npz"
+  },
+  {
+    "status": "ok",
+    "geom_id": "held_out_005",
+    "alpha": 6.0,
+    "reynolds": 70000.0,
+    "out": "/Users/haimahika/aero-weather/aeropinn/data/processed/sweep_v1/held_out_005_aoa+6.0_re7e+04.npz"
+  }
+]
